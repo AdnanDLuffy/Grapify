@@ -22,15 +22,17 @@ npm install grapify
 ```js 
 const graph = require("grapify");
 
-const resultingGraph = graph(2,100,{subjectArray:"English,Math"},{Marks:"100,100"});
+const resultingGraph = graph(2,100,{ColumsNames:"English,Math"},{Values:"100,100"});
 console.log(resultingGraph);
 ```
+**Grpah() takes 4 perams, 1st one is total number of columns, 2nd is maxValue , 3rd one ColumsName and 4th one takes Values **
+
 # Output 
 
 ```json
 [
-  { subject: 'English', markPercentage: 100 },
-  { subject: 'Math', markPercentage: 100 }
+  { Column: 'Bangla', valuePercentage: 100 },
+  { Column: 'English', valuePercentage: 100 }
 ]
 ```
 
