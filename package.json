@@ -14,5 +14,8 @@
     "node-graph"
   ],
   "author": "Abdullah Al Adnan",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "dependencies": {
+    "grapify": "^1.0.0"
+  }
 }
