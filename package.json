@@ -1,0 +1,18 @@
+{
+  "name": "grapify",
+  "version": "1.0.0",
+  "description": "A lightweight npm package for generating graphs based on user inputs. Easily create visual representations like percentage-based charts, bar graphs, or pie(under construction) charts with customizable options. Ideal for data visualization in Node.js applications.",
+  "main": "main.js",
+  "scripts": {
+    "test": "main.js"
+  },
+  "keywords": [
+    "graph",
+    "chart",
+    "data-visualization",
+    "percentage",
+    "node-graph"
+  ],
+  "author": "Abdullah Al Adnan",
+  "license": "GPL-3.0"
+}
