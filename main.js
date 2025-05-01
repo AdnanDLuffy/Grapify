@@ -48,10 +48,14 @@ function graphSub(lines,maxRange,{ColumsNames :Names},{Values: value}) {
     })
 
         if (finalValidator) {
-            return resultingArray;
+            const Array = resultingArray;
+            resultingArray = [];
+            return Array;
         }
         else {
-        return Error ;
+        const Err = Error;
+        Error = []    
+        return Err ;
         }
         
    
