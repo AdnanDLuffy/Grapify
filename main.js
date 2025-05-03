@@ -95,6 +95,20 @@ function Validator (gArray,sub,marks) {
 }
 
 
-const Graph = graphSub;
+const School = graphSub;
 
-module.exports = Graph ;
+function Graph ({ColumsNames:ColumsName},{Values:Value}) {
+    const column = ColumsName ;
+    const value = Value;
+
+    const columnArray = column.split(",");
+    const valueArray = value.split(",");
+
+    if (columnArray.length !== valueArray.length) {
+        return console.log("Man ! Please provide enough info")
+    }
+
+}
+
+
+module.exports = {School} ;
