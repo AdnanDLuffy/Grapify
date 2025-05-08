@@ -97,6 +97,7 @@ function Validator (gArray,sub,marks) {
 
 const School = graphSub;
 
+let GraphArray = [];
 function Graph ({ColumsNames:ColumsName},{Values:Value}) {
     const column = ColumsName ;
     const value = Value;
@@ -105,10 +106,23 @@ function Graph ({ColumsNames:ColumsName},{Values:Value}) {
     const valueArray = value.split(",");
 
     if (columnArray.length !== valueArray.length) {
-        return console.log("Man ! Please provide enough info")
+        return console.log("Man ! Please provide enough info");
     }
+    else {
+        columnArray.forEach((value,i) =>{
+            let Name = value ;
+            let CValue = valueArray[i];
 
+            let GraphObj = {ColumName: Name, Value : CValue};
+            GraphArray.push(GraphObj);
+        })
+
+        const GraphResult = GraphArray;
+        GraphArray = [];
+        return GraphResult;
+    }
+    
 }
 
 
-module.exports = {School} ;
+module.exports = {School,Graph} ;

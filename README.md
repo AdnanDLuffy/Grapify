@@ -19,15 +19,35 @@ npm install grapify
 
 ## Usage
 
-```js 
-const graph = require("grapify");
+**This is for normal usage** 
 
-const resultingGraph = graph(2,100,{ColumsNames:"English,Math"},{Values:"100,100"});
+```js
+const {graph} = require("grapify");
+const resultingGraph = graph({ColumsNames:"English,Math"},{Values:"100,100"});
 console.log(resultingGraph);
 ```
-**Grpah() takes 4 perams, 1st one is total number of columns, 2nd is maxValue , 3rd one ColumsName and 4th one takes Values **
 
-# Output 
+**Output** 
+
+```json
+[
+  { Column: 'Bangla', Value: 100 },
+  { Column: 'English', Value: 100 }
+]
+```
+
+**If you want to create a graph for your school result than you can use this :-** 
+*more advanced feature will be added in the near future InshaAllah*
+
+```js 
+const {school} = require("grapify");
+
+const resultingGraph = school(2,100,{ColumsNames:"English,Math"},{Values:"100,100"});
+console.log(resultingGraph);
+```
+*Grpah() takes 4 perams, 1st one is total number of columns, 2nd is maxValue , 3rd one ColumsName and 4th one takes Values*
+
+**Output** 
 
 ```json
 [
@@ -35,6 +55,7 @@ console.log(resultingGraph);
   { Column: 'English', valuePercentage: 100 }
 ]
 ```
+
 
 
 ## Roadmap
@@ -92,3 +113,4 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ---
 
+-----Free Palestine ----
