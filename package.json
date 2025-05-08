@@ -15,9 +15,6 @@
   ],
   "author": "Abdullah Al Adnan",
   "license": "GPL-3.0",
-  "dependencies": {
-    "grapify": "^1.0.5"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AdnanDLuffy/Grapify.git"
@@ -26,5 +23,7 @@
     "url": "https://github.com/AdnanDLuffy/Grapify/issues"
   },
   "homepage": "https://github.com/AdnanDLuffy/Grapify#readme",
-  "devDependencies": {}
+  "dependencies": {
+    "grapify": "^1.0.6"
+  }
 }
