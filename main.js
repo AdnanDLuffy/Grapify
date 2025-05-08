@@ -121,8 +121,6 @@ function Graph ({ColumsNames:ColumsName},{Values:Value}) {
         GraphArray = [];
         return GraphResult;
     }
-    
 }
-
 
 module.exports = {School,Graph} ;

@@ -22,7 +22,9 @@ npm install grapify
 **This is for normal usage** 
 
 ```js
-const {graph} = require("grapify");
+const grapifyGraph = require("grapify");
+const graph = grapifyGraph.graph ;
+
 const resultingGraph = graph({ColumsNames:"English,Math"},{Values:"100,100"});
 console.log(resultingGraph);
 ```
@@ -40,7 +42,8 @@ console.log(resultingGraph);
 *more advanced feature will be added in the near future InshaAllah*
 
 ```js 
-const {school} = require("grapify");
+const grapifySchool = require("grapify");
+const school = grapifySchool.school;
 
 const resultingGraph = school(2,100,{ColumsNames:"English,Math"},{Values:"100,100"});
 console.log(resultingGraph);
